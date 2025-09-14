@@ -194,3 +194,17 @@ h1, h2, h3 { font-weight: 700; letter-spacing: .2px; }
 @media (max-width: 900px) {
   .cv-grid { grid-template-columns: 1fr; gap: 24px; }
 }
+
+.project-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.project-images img {
+  max-height: 200px;
+  height: auto;
+  width: auto;
+}

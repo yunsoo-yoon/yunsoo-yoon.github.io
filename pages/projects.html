@@ -22,15 +22,53 @@
     <h1 id="featured">Projects</h1>
       <article id="fast-robots">
         <h3>Fast Robots</h3>
-        <p>RC platform with IMU/ToF, localization, PID + Kalman, waypoint planner.</p>
-        <p class="meta">C++ • Embedded • Controls</p>
+        <p>I built an RC platform equipped with an IMU and ToF sensors, featuring open-loop control, PID-based position and orientation control, 
+          a Kalman filter for localization, and a waypoint planner. The system utilizes BLE commands for execution.</p>
+          <div class="project-images">
+            <img src="../assets/img/proj/fast_robot_1.jpg" />
+            <img src="../assets/img/proj/fast_robot_2.png" />
+            <img src="../assets/img/proj/fast_robot_3.jpg" />
+          </div>        
+        <p class="meta">C++ • Embedded • Controls • BLE • Hardware</p>
         <p><a href="https://ysadrienne.github.io" target="_blank">Course write‑ups →</a></p>
       </article>
-  
+      
       <article id="telehealth-iot">
         <h3>Telehealth IoT</h3>
-        <p>Vitals telemetry without internet using gateway networks in rural areas.</p>
+        <p>We developed a smart blood pressure monitor that uses BLE to transmit data to an IoT gateway, which forwards it through LoRa to The Things Network, an IoT ecosystem.
+          Python scripts running on the server parse the incoming data and store it in a SQL database, allowing Cayuga Health, a local healthcare provider in Ithaca, to securely retrieve and review patient blood pressure readings.
+          This system eliminates the need for Wi-Fi, enabling underserved populations with limited internet access to monitor their blood pressure at home, saving time and resources while reducing strain on the healthcare system.
+        </p>
+        <div class="project-images">
+          <img src="../assets/img/proj/telehealth_1.png" />
+          <img src="../assets/img/proj/telehealth_2.png" />
+          <img src="../assets/img/proj/telehealth_3.png" />
+        </div>
         <p class="meta">IoT • Python • Hardware</p>
+      </article>
+
+      <article id="plantar-pad"></article>
+        <h3>Plantar Pressure Distribution Pad</h3>
+        <p>With a teammate, I developed a prototype training pad designed to help users achieve optimal plantar pressure distribution in the foot. 
+          We also created a software GUI that provides real-time visualization of pressure patterns, enabling users to monitor and adjust their foot pressure for improved balance and alignment.</p>
+        <div class="project-images">
+          <img src="../assets/img/proj/ppdp_1.png" />
+          <img src="../assets/img/proj/ppdp_2.png" />
+          <img src="../assets/img/proj/ppdp_3.png" />
+        </div>
+        <p class="meta">Python • Hardware</p>
+      </article>
+
+      <article id="cev"></article>
+        <h3>Cornell Electric Vehicles</h3>
+        <p>I served as both Manufacturing Lead and Drivetrain Subsystem Lead on a student-led team that designs and builds an energy-efficient electric vehicle each year to compete in the Shell Eco-marathon.
+          In this role, I spearheaded a major drivetrain redesign, replacing the traditional single-shaft motor with a mechanical differential, sprocket, and chain, with a dual-motor system in which independent shaft motors are integrated directly into each rear wheel, improving torque transmission efficiency and simplifying the overall drivetrain architecture.
+        </p>
+        <div class="project-images">
+          <img src="../assets/img/proj/cev_1.png" />
+          <img src="../assets/img/proj/cev_2.png" />
+        </div>
+        <p class="meta">CAD • Manufacturing</p>
       </article>
   </main>
 
