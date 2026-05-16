@@ -56,6 +56,23 @@
     </nav>
 
       <h2 id="robotics">Robotics Projects</h2>
+      <article id="mini-telop">
+        <h3>Mini Teleoperation Robot Platform</h3>
+        <p>I am developing a wireless, low-latency teleoperation platform with the open-source SO-ARM100 manipulator and Micro:bit v2 microcontrollers. 
+          The project focuses on creating an intuitive human-machine interface that maps operator movements to physical robotic actions.</p>
+          <div class="project-images">
+            <ul>
+              <li>Kinematic Mapping & Control: Implementing a forward kinematics model to calculate end-effector positioning, utilizing multiple orientation sensors to track operator input.</li>
+              <li>Subsystem Integration: Designing a custom software GUI providing visual indicators of grasp status, system state, and communication stability.</li>
+              <li>Haptic Feedback Roadmap: Integrating force-sensitive resistors (FSRs) on the manipulator's gripper to detect and measure physical contact forces during object interaction.</li>
+              <li>Tactile Actuation: Developing a closed-loop haptic rendering system that translates raw FSR data into physical tactile cues for the operator via voice coil actuators, signaling a successful, stable grasp.</li>
+            </ul>
+            <img src="../assets/img/proj/teleop_1.png" />
+            <img src="../assets/img/proj/teleop_2.png" />
+          </div>        
+        <p class="meta">C/C++ • Embedded • Controls • Hardware</p>
+      </article>
+
       <article id="fast-robots">
         <h3>Fast Robots</h3>
         <p>I built an RC platform equipped with an IMU and ToF sensors, featuring open-loop control, PID-based position and orientation control, 
