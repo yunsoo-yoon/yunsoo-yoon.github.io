@@ -22,21 +22,42 @@
   <main class="container">
     <h1>Research</h1>
 
-    <article id="manipulation"></article>
-      <h3>Haptically Transparent Glove for Robot Manipulation Training</h3>
-      <p>I am developing a haptically transparent glove designed for high coverage, compliance, and motion capture, enabling humans to naturally interact with objects while training robotic hands. This project is conducted in collaboration with MIT and Florida A&M University (FAMU).
-        The goal is to create a glove that can detect and localize contact points during free-space manipulation, allowing us to understand where and how forces occur when grasping objects without impeding the wearer’s tactile perception.
-        As part of my role, I am conducting a literature review on current tactile sensing mechanisms and motion tracking methods for human hands and grasped objects. My research focuses on:</p>
+    <article id="sensor"></article>
+      <h3>Flexible Tactile Sensing Skin for Dexterous Manipulation</h3>
+      <p>Building on the strict design constraints identified in our foundational research, 
+        I am designing, fabricating, and characterizing a flexible tactile sensing skin to give robotic and human-machine interfaces high-fidelity surface awareness, 
+        as research shows haptic feedback is crucial in effective robot manipulation.
+        This research bridges the gap between raw contact mechanics and real-time machine learning pipelines.</p>
         <ul>
-          <li>Exploring state-of-the-art motion capture systems for both finger and object tracking, including vision-based approaches such as Apple’s EgoDex framework for hand tracking.</li>
-          <li>Identifying opportunities to design thin, flexible, and haptically transparent sensor layers that can be integrated onto the glove’s surface.</li>
-          <li>Investigating sensing methods that detect contact occurrence (without shear force measurement at this stage) for use in robotic training and teleoperation applications.</li>
+          <li>High-Density Architecture: Developing flexible, low-profile capacitive sensor arrays optimized for spatial resolution, surface coverage, and  mechanical integration onto highly curved, compliant robotic finger geometries.</li>
+          <li>Material Stack Optimization: Testing custom dielectric and conductive material stacks to achieve a balance between conductivity, stability, and structural durability during repetitive physical interaction</li>
+          <li>Empirical Characterization: Building bench-level test stands to evaluate sensor performance for repeatability, sensitivity thresholds, hysteresis, and signal stability under dynamic loads.</li>
+          <li>Standardized Benchmarking: Collaborating on a multi-author institutional benchmarking paper for dexterous manipulation, multi-tier benchmarking framework to quantify robotic dexterity, structuring evaluation metrics across low-level components (eg. actuation, sensing), mid-level assemblies (eg. fingers, wrist), and high-level task execution.</li>
         </ul>
-      <p>Ultimately, the glove aims to bridge human grasp perception and robotic learning by providing a lightweight, high-fidelity sensing interface between human and machine.</p>
+      <p>Ultimately, this sensing skin provides the responsive, real-time physical feedback loop necessary to enable delicate, human-like object manipulation and tactile learning in advanced robotic systems.</p>
+      <div class="project-images">
+        <img src="../assets/img/research/hand_1.png" />
+        <img src="../assets/img/research/hand_2.png" />
+        <img src="../assets/img/research/hand_3.png" />
+      </div>
+      <p class="meta">Robotics • Haptics • Material Science • Embedded Systems • Hardware Testing</p>
+    </article>
+
+    <article id="sensing"></article>
+      <h3>Foundational Research: Parameters for Haptically Transparent Interfaces</h3>
+      <p>Haptic feedback is essential in natural human-to-machine training without compromising the user's tactile perception. 
+        We initially explored existing market offerings from industry partners to determine if off-the-shelf components could satisfy our criteria for high coverage, spatial resolution, and compliance. 
+        Because commercially available options were optimized for different operational priorities, we decided to design a custom solution.</p>
+        <ul>
+          <li>Explored state-of-the-art motion capture systems for both finger and object tracking, including vision-based approaches such as Apple’s EgoDex framework for hand tracking.</li>
+          <li>Identified opportunities to design thin, flexible, and haptically transparent sensor layers that can be integrated onto the glove’s surface.</li>
+          <li>Investigated sensing methods that detect contact occurrence (without shear force measurement at this stage) for use in robotic training and teleoperation applications.</li>
+        </ul>
+      <p>This review and parameterization laid the foundation required to transition from theoretical constraints to physical hardware development, informing our custom tactile skin architectures.</p>
       <div class="project-images">
       </div>
 
-      <p class="meta">Robotics • Manipulation • Embedded • Sensor Fusion</p>
+      <p class="meta">Robotics • Human-Robot Interaction (HRI) • Embedded • Sensor Fusion</p>
     </article>
 
     <article id="wearable">
