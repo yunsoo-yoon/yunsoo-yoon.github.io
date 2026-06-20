@@ -58,19 +58,22 @@
       <h2 id="robotics">Robotics Projects</h2>
       <article id="mini-telop">
         <h3>Mini Teleoperation Robot Platform</h3>
-        <p>I am developing a wireless, low-latency teleoperation platform with the open-source SO-ARM100 manipulator and Micro:bit v2 microcontrollers. 
+        <p>I developed a wireless teleoperation platform with the open-source SO-ARM101 manipulator and Micro:bit v2 microcontrollers. 
           The project focuses on creating an intuitive human-machine interface that maps operator movements to physical robotic actions.</p>
           <div class="project-images">
             <ul>
-              <li>Kinematic Mapping & Control: Implementing a forward kinematics model to calculate end-effector positioning, utilizing multiple orientation sensors to track operator input.</li>
-              <li>Subsystem Integration: Designing a custom software GUI providing visual indicators of grasp status, system state, and communication stability.</li>
-              <li>Haptic Feedback Roadmap: Integrating force-sensitive resistors (FSRs) on the manipulator's gripper to detect and measure physical contact forces during object interaction.</li>
-              <li>Tactile Actuation: Developing a closed-loop haptic rendering system that translates raw FSR data into physical tactile cues for the operator via voice coil actuators, signaling a successful, stable grasp.</li>
+              <li>Direct Orientation Mapping: Implemented real-time tracking using onboard sensor roll, pitch, and yaw data to map operator hand orientation 
+                directly to the robotic arm's actuator trajectories.</li>
+              <li>Hardware-in-the-Loop Integration: Designed and fabricated the master-side control interface for the operator, 
+                configuring the embedded subsystem for wireless communication stability.</li>
+              <li>FSR Actuation Trigger: Integrated a force-sensing resistor (FSR) on the operator's interface to act as an analog button, 
+                allowing the user to precisely trigger and control the opening and closing of the robotic gripper.</li>
             </ul>
             <img src="../assets/img/proj/teleop_1.png" />
             <img src="../assets/img/proj/teleop_2.png" />
+            <video src="../assets/img/proj/teleop_demo.mov" autoplay loop muted playsinline controls width="500"></video>
           </div>        
-        <p class="meta">C/C++ • Embedded • Controls • Hardware</p>
+        <p class="meta">C • Embedded • Radio • Hardware</p>
       </article>
 
       <article id="fast-robots">
@@ -87,6 +90,20 @@
       </article>
       
       <h2 id="hardware">Hardware/Mechatronics Projects</h2>
+
+    <article id="haptic-paddle">
+        <h3>Haptic Paddle</h3>
+        <p>I am building a single-degree-of-freedom haptic paddle device utilizing a Raspberry Pi Pico microcontroller to render real-time, interactive force-feedback environments. 
+          To achieve current and position control, I am integrating and calibrating a hardware subsystem featuring a load cell with an instrument amplifier, a current sensor, and a magnetic encoder. 
+          I am also designing a graphical user interface to visualize system dynamics in real time and modulate complex haptic effects for the user.</p>
+        <div class="project-images">
+          <img src="../assets/img/proj/paddle_1.png" />
+          <img src="../assets/img/proj/paddle_2.png" />
+          <img src="../assets/img/proj/paddle_3.jpeg" />
+        </div>
+        <p class="meta">C • Python • Hardware • Haptics</p>
+      </article>
+
       <article id="telehealth-iot">
         <h3>Telehealth IoT</h3>
         <p>We developed a smart blood pressure monitor that uses BLE to transmit data to an IoT gateway, which forwards it through LoRa to The Things Network, an IoT ecosystem.
@@ -101,7 +118,7 @@
         <p class="meta">IoT • Python • Hardware</p>
       </article>
 
-      <article id="plantar-pad"></article>
+      <article id="plantar-pad">
         <h3>Plantar Pressure Distribution Pad</h3>
         <p>With a teammate, I developed a prototype training pad designed to help users achieve optimal plantar pressure distribution in the foot. 
           We also created a software GUI that provides real-time visualization of pressure patterns, enabling users to monitor and adjust their foot pressure for improved balance and alignment.</p>
@@ -114,7 +131,7 @@
       </article>
 
       <h2 id="manufacturing">Manufacturing/Product Design Projects</h2>
-      <article id="cev"></article>
+      <article id="cev">
         <h3>Cornell Electric Vehicles</h3>
         <p>I served as both Manufacturing Lead and Drivetrain Subsystem Lead on a student-led team that designs and builds an energy-efficient electric vehicle each year to compete in the Shell Eco-marathon.
           In this role, I spearheaded a major drivetrain redesign, replacing the traditional single-shaft motor with a mechanical differential, sprocket, and chain, with a dual-motor system in which independent shaft motors are integrated directly into each rear wheel, improving torque transmission efficiency and simplifying the overall drivetrain architecture.
